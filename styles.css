@@ -2,13 +2,13 @@
     padding: 0;
     margin: 0;
     background-color: rgb(29, 22, 22);
-    color: rgb(255, 152, 152);
+    color: rgb(245, 210, 210);
     font-family: monospace;
     font-size: 1.1rem;
 }
 
 body {
-    height: 90vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
