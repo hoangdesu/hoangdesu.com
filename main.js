@@ -7,6 +7,6 @@ setInterval(() => {
         index = 0;
     }
     title.textContent = names[index];
-    console.log(index);
+    // console.log(index);
     index++;
 }, 3000);

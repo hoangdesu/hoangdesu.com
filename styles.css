@@ -51,6 +51,8 @@ h1 {
 h3 {
     color: pink;
     transition: 0.5s all ease;
+    text-align: c
+    ;
 }
 
 h3:hover {
