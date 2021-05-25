@@ -49,10 +49,10 @@ h1 {
 }
 
 h3 {
+
     color: pink;
     transition: 0.5s all ease;
-    text-align: c
-    ;
+    text-align: center;
 }
 
 h3:hover {
@@ -100,4 +100,8 @@ h3:hover {
     100% {
         color: pink;
     }
+}
+
+@media screen and (max-width: 700px) {
+    
 }
