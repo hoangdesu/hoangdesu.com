@@ -8,7 +8,8 @@
 
 nav {
     width: 100vw;
-    padding: 20px 10px;
+    /* padding: 20px 10px; */
+    padding-top: 30px;
     position: fixed;
     background-color: transparent;
     display: flex;
@@ -22,12 +23,13 @@ nav a {
     transform: 1s all ease;
     padding: 5px 10px;
     transition: 0.2s all ease;
+    border-radius: 12px;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: rgb(56, 49, 49);
-    background-color: #ffc;
+    background-color: #ffc;   
 }
 
 body main {
@@ -46,7 +48,11 @@ h1 {
     color: white;
     animation: glitch 3s 0s infinite alternate;
     margin: 50px 0;
+    transition: 0.2s;
+}
 
+h1:hover {
+    transform: scale(1.05);
 }
 
 h3 {
