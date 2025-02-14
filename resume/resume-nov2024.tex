@@ -1,0 +1,226 @@
+%-------------------------
+% Hoang Nguyen's resume in LaTeX
+% Github: https://github.com/hoangdesu
+% Personal website: https://hoangdesu.com
+% Last updated: Oct 2022
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItems}[3]{
+  \item\small{
+    \textbf{#1:} \\
+        {#2} \\
+        {#3}
+    
+  }
+}
+
+\newcommand{\normalResumeItem}[1]{
+  \item\small{
+    {#1}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Hoang Nguyen} & \href{https://hoangdesu.com/}{hoangdesu.com} \\
+  \href{mailto:hoangdesu@gmail.com}{hoangdesu@gmail.com} & \href{https://github.com/hoangdesu}{github.com/hoangdesu} \\
+  \href{tel:+84-913-172-602}{+84-913-172-602} & \href{https://www.linkedin.com/in/hoangdesu/}{linkedin.com/in/hoangdesu} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {RMIT University Vietnam}{Ho Chi Minh City, Vietnam}
+      {Bachelor of Science in Software Engineering}{Feb. 2018 -- Dec. 2022}
+    \resumeSubheading
+      {Pius X High School}{Lincoln, NE, U.S.A}
+      {General education}{Sep. 2015 -- Jun. 2016}
+  \resumeSubHeadingListEnd
+  
+ %
+%--------PROGRAMMING SKILLS------------
+\section{Technical skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Python, HTML/CSS, JavaScript, TypeScript, Java, Swift, Lua, Bash, C\#, C++, SQL}
+   }
+   \item{
+    \textbf{Technologies}{: ReactJS, NextJS, NodeJS, Spring, GraphQL, AWS, Docker, Git, Jenkins, iOS, Android}
+   }
+   \item{
+    \textbf{Experienced}{: Jest, Cucumber, WordPress, Winform, Game Development (Löve2D, PyGame, Unity, SwiftUI), MongoDB, PostgreSQL, Kafka, OpenCV, NumPy, Tkinter, JavaFx, SonarQube, LaTeX}
+   }
+ \resumeSubHeadingListEnd
+ 
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+      {New Tofu Limited}{Hong Kong (Remote)}
+      {Senior Software Engineer}{Feb. 2024 -- Oct. 2024}
+      \resumeItemListStart
+        \normalResumeItem
+          {Worked on customizing RAG chat systems for the customers based in Hong Kong.}
+      \normalResumeItem
+          {Designed and developed web apps and APIs using React, NextJS 14, NodeJS, FastAPI (Python), MongoDB.}\\
+          \normalResumeItem
+          {Integrated multiple LLM models such as GPTs, Llama3 and Gemini into the company's products.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {National Australia Bank}{Ho Chi Minh City, Vietnam}
+      {Software Engineer}{Dec. 2021 -- May. 2023}
+      \resumeItemListStart
+        \resumeItems{Team member}
+          {- Designed and developed multiple enterprise-level applications for the Open Data Engineering team, focusing on the front-end and the BFF levels with cloud-first approach; substantially using React, Node and GraphQL.}
+          {- Continuous Integration Pipeline with Jenkins, pull requests, code reviews, agile development, unit testing, acceptance testing.}\\
+          {- Represented the team to prepare and demonstrate for NAB Australia on the topic of mini-app development.} \\
+          {- Enriched system metrics by integrating analytic utilities into current applications.}
+        \resumeItem{Starcamper Batch 1}
+          {Worked with a team called Titanium in a full-time training program provided by NAB Innovation Centre Vietnam (NICV) and graduated as a batch 1 Starcamper to get familiar with the technologies being used at NAB in order to facilitate the final Capstone project which resulted in an official employment with NICV.} \\
+        %  \normalResumeItem
+        %   {hi ya}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Live Italian Luxury}{Ho Chi Minh City, Vietnam}
+      {Web Developer | Salesperson}{2018 -- 2020}
+      \resumeItemListStart
+        \normalResumeItem
+            {Designed and developed websites for the company, focusing on importing Italian products and marketing in Vietnamese market.}
+        \normalResumeItem    
+            {Managed products, product campaigns and online contents with Search Engine Optimized solutions using tools like HTML/CSS/JavaScript and CMS such as WordPress and Squarespace.}
+        \normalResumeItem 
+            {Various notable websites including \href{https://www.liveitalianluxury.com/}{https://www.liveitalianluxury.com} and \href{https://www.miceriumlab.net/}{https://www.miceriumlab.net}.}
+     
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Private Tutor}{Ho Chi Minh City, Vietnam}
+      {Computer Science, Programming, IELTS}{2019 -- present}
+      \resumeItemListStart
+        \normalResumeItem
+            {Work as a private tutor mainly for Programming and Computer Science subjects in spare time.}
+        \normalResumeItem
+            {Courses teaching: Python, Java, JavaScript, A-level Computer Science, AP Computer Science, Arduino, Scratch.}
+        \normalResumeItem
+        {Tutor a wide range of student groups, ranging from middle-school ages to university level.}
+        \normalResumeItem{Notable achievements:}
+            \\ {- Helped a student to earn a 100\% scholarship from Michigan University.}
+            \\ {- Students are studying at Vinschool, Le Hong Phong, BIS, VAS, TAS, VFIS, RMIT Vietnam, Singapore (Nanyang, SIM), America (Michigan, George Mason), Canada (University of Waterloo).}
+      
+      
+        % \resumeItem{Portfolio Management}
+        %   {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
+        % \resumeItem{QuantDesk}
+        %   {Python backend for a web application used by hedge fund managers for portfolio management.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+   %--------SOFT SKILLS------------
+\section{Supplemental skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{ | Proficient: Vietnamese, English | Conversational: Japanese}
+    %  \hfill
+    %  \textbf{Conversational}{: Japanese}
+   }
+   \item{
+        \textbf{Design and media}{ | UI/UX, Figma, Sketch, Invision, Photoshop, Premiere, Illustrator, Final Cut Pro}
+   }
+ \resumeSubHeadingListEnd
+
+
+% %-----------PROJECTS-----------------
+% \section{Projects}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{QuantSoftware Toolkit}
+%       {Open source python library for financial data analysis and machine learning for finance.}
+%     \resumeSubItem{Github Visualization}
+%       {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+%     \resumeSubItem{Recommendation System}
+%       {Music and Movie recommender systems using collaborative filtering on public datasets.}
+% %     \resumeSubItem{Mac Setup}
+% %       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+%   \resumeSubHeadingListEnd
+
+
+
+
+%-------------------------------------------
+\end{document}
