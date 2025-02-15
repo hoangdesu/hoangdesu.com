@@ -5,11 +5,11 @@
   "version": "2.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev --turbopack -p 2602",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 2602",
     "lint": "next lint",
-    "serve": "serve out",
+    "serve": "serve out -l 2602",
     "build-serve": "pnpm run build && pnpm run serve"
   },
   "dependencies": {
