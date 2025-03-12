@@ -1,0 +1,1 @@
+use husky: https://typicode.github.io/husky/get-started.html

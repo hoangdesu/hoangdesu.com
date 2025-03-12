@@ -35,16 +35,16 @@ nav {
     padding-top: 30px;
     position: fixed;
     background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
 }
 
 nav a {
     color: #ffc;
     text-decoration: none;
     transform: 1s all ease;
-    padding: 5px 10px;
+    padding: 6px 15px;
     transition: 0.2s all ease;
     border-radius: 12px;
 }
@@ -52,7 +52,8 @@ nav a {
 nav a:hover {
     /* text-decoration: underline; */
     color: rgb(56, 49, 49);
-    background-color: #ffc;   
+    background-color: #ffc;
+    /* padding: 5px 16px; */
 }
 
 body main {
@@ -89,14 +90,6 @@ h3:hover {
     transform: scale(1.05);
 }
 
-
-#smoke {
-    text-align: center;
-    position: relative;
-    right: 26px;
-    bottom: 7px;
-}
-
 #sign {
     position: relative;
     right: 20px;
@@ -130,8 +123,4 @@ h3:hover {
     100% {
         color: pink;
     }
-}
-
-@media screen and (max-width: 700px) {
-    
 }

@@ -6,7 +6,7 @@ import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Brian Nguyen',
-  description: 'A Software Engineer from Vietnam',
+  description: 'A Software Engineer from Vietnam 🇻🇳',
 };
 
 const poppins = Poppins({ weight: '700', subsets: ['latin'] });
