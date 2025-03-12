@@ -48,7 +48,7 @@ export default function V1HomePage() {
 
         <h3>
           I&rsquo;m a software engineer.
-          <br className='block lg:hidden' />I build things with ❤️ and
+          <br className='block lg:hidden' /> I build things with ❤️ and
           <div className='relative inline-block ml-1 text-xl text-red-400'>
             <span>☕</span>
             <span className='absolute bottom-[8px] left-0 opacity-70'>♨</span>
