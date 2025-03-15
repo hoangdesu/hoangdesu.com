@@ -4,6 +4,37 @@ import { useEffect, useState } from 'react';
 
 const names = ['Hi 👋', 'I am Hoàng', 'Tớ tên Hoàng', '僕はホアンです'];
 
+const links = [
+  {
+    href: 'https://www.linkedin.com/in/hoangdesu/',
+    text: 'LinkedIn',
+  },
+  {
+    href: '/resume/Hoang Nguyen (Brian) CV.pdf',
+    text: 'Resume',
+  },
+  {
+    href: 'https://github.com/hoangdesu',
+    text: 'Github',
+  },
+  {
+    href: 'https://leetcode.com/u/hoangdesu/',
+    text: 'LeetCode',
+  },
+  {
+    href: 'https://www.facebook.com/Hoangdayo/',
+    text: 'Facebook',
+  },
+  {
+    href: 'mailto:hoangdesu@gmail.com',
+    text: 'Email',
+  },
+  {
+    href: 'https://www.instagram.com/hoang.desu/',
+    text: 'Instagram',
+  },
+];
+
 export default function V1HomePage() {
   const [index, setIndex] = useState(0);
 
@@ -24,23 +55,11 @@ export default function V1HomePage() {
   return (
     <div>
       <nav className='flex justify-around flex-wrap items-center'>
-        <a href='https://www.linkedin.com/in/hoangdesu/' target='_blank'>
-          LinkedIn
-        </a>
-        <a href='https://github.com/hoangdesu' target='_blank'>
-          Github
-        </a>
-        <a href='https://www.facebook.com/Hoangdayo/' target='_blank'>
-          Facebook
-        </a>
-        <a href='mailto:hoangdesu@gmail.com'>Email</a>
-        <a
-          // href='https://raw.githubusercontent.com/hoangdesu/hoangdesu/refs/heads/main/resume/HoangNguyen_Resume_Nov2024.pdf'
-          href='/assets/Hoang Nguyen (Brian) CV.pdf'
-          target='_blank'
-        >
-          Resume
-        </a>
+        {links.map(({ href, text }) => (
+          <a key={href} href={href} target='_blank'>
+            {text}
+          </a>
+        ))}
       </nav>
 
       <main>
